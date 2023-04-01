@@ -425,7 +425,8 @@ section{
         display: none;
     }
     .play{
-    margin-left: -4em;
+        margin-left: -9em;
+        margin-right: -5em;
     }
 }
 @media (max-width:800px){
