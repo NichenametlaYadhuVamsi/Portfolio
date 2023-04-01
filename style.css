@@ -508,18 +508,18 @@ section{
     }
     .contact-right form input,
     .contact-right form textarea{
-        width: 80%;
-        margin:1em -3em
+        width: 90%;
+        margin:1em -3em;
     }
     section{
         margin: 0;
         padding: 0;
     }
-    /* .skills h2{
+    .skills h2{
         font-size: 2em;
     }
     .group h2{
         font-size: 2.3em;
-    } */
+    }
 }
 
