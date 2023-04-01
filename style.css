@@ -509,6 +509,7 @@ section{
     .contact-right form input,
     .contact-right form textarea{
         width: 80%;
+        margin:1em -3em
     }
     section{
         margin: 0;
