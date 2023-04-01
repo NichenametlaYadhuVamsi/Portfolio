@@ -72,7 +72,7 @@ body{
 }
 #menu{
     font-size: 2rem;
-    /*  margin-right:3em;  */
+    margin-right:1em; 
     margin-top: 0.5em; 
     display: none;
 }
@@ -403,7 +403,7 @@ section{
         margin-left: 1em;
     }
     .navbar{
-        margin-right:0.3em;
+        margin-right:0em;
     }
     .home,.about{
         padding:6rem 1.5rem 2rem;
@@ -429,9 +429,25 @@ section{
     }
 }
 @media (max-width:800px){
+    .home{
+        margin-top: 2em;
+    }
+    .home .inside h3{
+        font-size: 2em;
+
+    }
+    .home .inside h1{
+        font-size: 3em;
+    }
+    .home{
+        margin-right: 0em;
+    }
     #menu{
         display: block;
+        padding-right: 0.3em;
+        margin-right: 0;
     }
+
     #menu:hover{
         cursor: pointer;
     }
@@ -444,7 +460,7 @@ section{
         padding: 0.3em 0.4%;
         /* background-color: white; */
         background-color: #1f242d;
-        margin-left: -0.4em;
+        margin-left: 0.4em;
         display: none;
         margin-top: 0;
     }
@@ -470,7 +486,7 @@ section{
     .box1{
         width: 100%;
         height: 100%;
-        margin: 1em;
+        margin: 0em;
     }
     .container-1{
         display: block;
@@ -482,12 +498,27 @@ section{
     }
     
     .back,.cplus{
-        margin-left: 1em;
+        margin-right: 1em;
+        margin-top: 1em;
     }
     .personal{
         justify-content: center;
         grid-template-columns: none;
         align-items: center;
     }
+    .contact-right form input,
+    .contact-right form textarea{
+        width: 80%;
+    }
+    section{
+        margin: 0;
+        padding: 0;
+    }
+    /* .skills h2{
+        font-size: 2em;
+    }
+    .group h2{
+        font-size: 2.3em;
+    } */
 }
 
