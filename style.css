@@ -281,7 +281,7 @@ padding:1em
      align-items: center;  
      flex-direction: column;
      padding: 0 1em 0 1em;
-     transition: height 0.5s ease;
+    transition: height 0.5s ease;
 }
 .layer h3{
     font-weight: 500;
@@ -347,7 +347,8 @@ padding:1em
 }
 
 .contact-right form input,
-.contact-right form textarea
+.contact-right form textarea,
+.contact-right form button
 {
     border: none;
     width: 75%;
@@ -359,18 +360,24 @@ padding:1em
     border-radius: 1.4em;
     resize: none;
 }
+/* .contact-right form input .sendi{
+    margin: 0em;
+} */
 .contact-right{
     margin-top: 3em;
     margin-left: 10em;
 }
 .contact-right form input:focus,
+.contact-right form button,
 .contact-right form textarea:focus{
     outline: none;
     border-color: rgb(0, 166, 255);
     box-shadow: 0 0 1rem rgb(0, 166, 255);
 
 } 
-.contact-right form input[type=submit]{
+.contact-right form input[type=submit],
+.contact-right form button{
+    margin-top: 0em;
     display: inline-block;
     padding: 1rem 2.3rem;
     background-color: rgb(0, 166, 255);
@@ -381,7 +388,8 @@ padding:1em
     cursor: pointer;
     font-size: large;
 }
-.contact-right form input[type=submit]:hover{
+.contact-right form input[type=submit]:hover
+    {
     box-shadow: 0 0 1rem rgb(0, 166, 255);
 }
 .footer-text{
@@ -396,6 +404,17 @@ padding:1em
 }
 section{
     width: 100%;
+}
+.sent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: green;
+    width: 65%;
+    margin-left: 1.3em;
+    height: 0em;
+    transition: height 0.5s ease;
 }
 
 @media (max-width: 1037px){
