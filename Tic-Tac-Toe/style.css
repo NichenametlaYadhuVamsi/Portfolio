@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: #d161ff;
+}
+body{
+     background: linear-gradient(135deg, #8052ec 60%, #d161ff);  
+    /* background-color: blue; */
+}
+nav{
+    /* background-color: rgb(96, 9, 96); */
+    font-size: 5em;
+    padding: 24px;
+    align-items: center;
+    color:#d161ff;
+    padding-left: 0;
+}
+nav ul{
+    list-style: none;
+    align-items: center;
+    text-align: center;
+}
+
+.game{
+    /* background: linear-gradient(135deg, #8052ec 60%, #d161ff); */
+    /* background: linear-gradient(135deg,#8052ec 50% ,#d161ff); */
+    display: flex;
+    justify-content: center; 
+}
+.container{
+    display: grid;
+    /* float: right; */
+    /* justify-content: center; */
+    grid-template-columns: repeat(3,10vw);
+      grid-template-rows: repeat(3,10vw);  
+    padding-top: 13px;
+    gap: 10px;
+    position: relative;
+}
+.box{
+    background-color: white;
+    color:#d161ff;
+    border: 2px solid;
+    text-align: center;
+    justify-content: center;
+    /* align-items: center; */
+    font-size: 8vw;
+    cursor: pointer;
+}
+.box:hover{
+    background-color: rgb(218, 186, 218);
+}
+.imgbox{
+    display: none;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+     margin: 50px; 
+} 
+.game-info{
+    padding: 50px;
+}
+
+.info{
+    color:#d161ff;;
+    font-size: 55px;
+    text-align: center;
+    
+}
+.reset{
+     padding: 1em; 
+    margin-top: 1em;
+    margin-left: 50px; 
+    font-size: 1.3em;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    width: 270px;
+}
+.img1{
+    width: 0;
+    transition: width 1s ease;
+}
+.img2{
+    width: 0;
+    transition: width 1s ease;
+}
+.info1{
+    justify-content: center;
+    text-align: center;
+}
+.reset:hover{
+    background-color: rgb(124, 124, 124);
+    cursor: pointer;
+}
+.line{
+    position: absolute;
+    background-color: black;
+    /* width: 30vw; */
+    width: 0vw;
+    height: 3px;
+      /* transform: translate(0vw,35vw) rotate(45deg);      */
+     transition: width 1s ease;
+}
+@media screen and (max-width:640px) 
+{
+    /* *{
+        background-color: black;
+    } */
+    .game{
+        flex-wrap: wrap;
+    }
+    .game-info{
+        flex-wrap: wrap;
+    }
+    .container{
+        grid-template-columns: repeat(3,20vw);
+      grid-template-rows: repeat(3,20vw);
+      /* justify-content: center; */
+
+    }
+    .box{
+        font-size: 18vw;
+    }
+
+}
+
+
+
+
